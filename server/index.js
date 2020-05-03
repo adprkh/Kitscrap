@@ -9,7 +9,7 @@ app.use(function(req,res,next){
     res.header("Access-Control-Allow-Origin","*") //disable for security on local
     res.header("Access-Control-Allow-Headers","Content-Type");
     next();
-})
+});
 
 
 app.get('/creators', async (req, res) => {

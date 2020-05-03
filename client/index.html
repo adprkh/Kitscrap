@@ -6,16 +6,15 @@
         <h1>Setuptourist</h1>
 
         <h4>Add a new creator</h4>
-        <input class = "channel-input" type="text" placeholder="paste youtube url">
+        <input class="channel-input" type="text" placeholder="Paste YouTube URL" />
         <button type="submit" onclick="submitChannel()">Submit</button>
-
-
-        <div class = 'container'></div>
+        
+        <div class='container'></div>
         
         <script>
             
             function submitChannel(){
-                const channelValue = document.querySelector('.channel-input').value;
+                const channelURL = document.querySelector('.channel-input').value;
                 //send to server
 
                 fetch('http://localhost:3000/creators', {
@@ -58,8 +57,6 @@
         
            loadCreators();
             
-            
-            ctr.appendChild(card);
         </script>
 
         <style>
